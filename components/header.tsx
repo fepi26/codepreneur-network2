@@ -18,7 +18,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Copia%20de%20visual-xEv6VBJIekq7tW5SF0423WXZBu0AlR.png"
-              alt="Visible AI Logo"
+              alt="Codepreneur Network Logo"
               width={160}
               height={160}
               className="h-24 w-24 object-contain"

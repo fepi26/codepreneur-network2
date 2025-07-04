@@ -6,24 +6,24 @@ import { Button } from "@/components/ui/button"
 
 const posts = [
   {
-    date: "Feb 1, 2025",
+    date: "June 1st, 2025",
     readTime: "5 min read",
-    title: "Maximizing Social Media Impact with AI",
-    description: "Learn how AI-powered content creation is revolutionizing social media strategy and engagement rates.",
+    title: "Live to Create",
+    description: "How The Codepreneur Network came to be",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20at%203.51.56%E2%80%AFPM-584BBy6y0Zv92sQ0MCOTtdlwzazQah.png",
-    href: "/blog/maximizing-social-media-impact",
-    tags: ["Social Media", "AI", "Content Strategy"],
+    href: "/blog/live-to-create",
+    tags: ["Business", "Programming"]
   },
   {
-    date: "Jan 28, 2025",
-    readTime: "4 min read",
-    title: "The Future of Content Creation",
-    description: "Discover how automated content generation is transforming digital marketing landscapes.",
+    date: "Mar 15, 2025",
+    readTime: "6 min read",
+    title: "21st Century Success",
+    description: "The Evolution of Success in the Age of Technology",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20at%203.52.16%E2%80%AFPM-uqFPHw2jCZxuce9Oo7t1BLEnc7pasu.png",
     href: "/blog/future-of-content-creation",
-    tags: ["Content Creation", "AI", "Future Tech"],
+    tags: ["Technology", "AI", "Future Tech"],
   },
   {
     date: "Jan 25, 2025",
