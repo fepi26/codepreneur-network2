@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add to your existing globals.css */
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+/* Add these base styles */
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
+}
+
