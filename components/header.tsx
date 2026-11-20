@@ -3,7 +3,6 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
 export function Header() {
@@ -33,14 +32,9 @@ export function Header() {
           <Link href="/blog" className="text-sm text-gray-300 hover:text-white transition-colors">
             Blog
           </Link>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfdCKrWeB0ABur1oJLZk7cwTXw4qtDWNN_c7qXU0a-4QvowvA/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-gray-300 hover:text-white transition-colors"
-          >
+          <Link href="/apply" className="text-sm text-gray-300 hover:text-white transition-colors">
             Volunteer
-          </a>
+          </Link>
           <Link href="/events" className="text-sm text-gray-300 hover:text-white transition-colors">
             Events
           </Link>
@@ -49,18 +43,6 @@ export function Header() {
           </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Button
-            variant="secondary"
-            className="bg-white text-black hover:bg-orange-500 hover:text-white transition-colors duration-300 hidden md:flex"
-          >
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfdCKrWeB0ABur1oJLZk7cwTXw4qtDWNN_c7qXU0a-4QvowvA/viewform?usp=header"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Get Started
-            </a>
-          </Button>
           <button onClick={toggleMenu} className="md:hidden text-white focus:outline-none" aria-label="Toggle menu">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -85,7 +67,7 @@ export function Header() {
               Blog
             </Link>
             <Link
-              href="/volunteer"
+              href="/apply"
               className="text-sm text-gray-300 hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -105,22 +87,9 @@ export function Header() {
             >
               Courses
             </Link>
-            <Button
-              variant="secondary"
-              className="bg-white text-black hover:bg-orange-500 hover:text-white transition-colors duration-300 w-full mt-2"
-            >
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfdCKrWeB0ABur1oJLZk7cwTXw4qtDWNN_c7qXU0a-4QvowvA/viewform?usp=header"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Started
-              </a>
-            </Button>
           </nav>
         </div>
       )}
     </header>
   )
 }
-
