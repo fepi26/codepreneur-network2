@@ -5,6 +5,7 @@ import { InteractiveGrid } from "@/components/ui/interactive-grid"
 import { ShineBorder } from "@/components/ui/shine-border"
 import { UserPlus } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
