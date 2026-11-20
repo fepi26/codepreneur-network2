@@ -62,15 +62,10 @@ export function HeroSection() {
             transition={{ delay: 0.5, duration: 0.5 }}
           >
             <Button variant="secondary" className="bg-white text-black hover:bg-gray-200">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfdCKrWeB0ABur1oJLZk7cwTXw4qtDWNN_c7qXU0a-4QvowvA/viewform?usp=header"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
-              >
-                <UserPlus className="w-4 h-4" />
-                Volunteer
-              </a>
+              <Link href="/apply" className="flex items-center gap-2">
+            <UserPlus className="w-4 h-4" />
+              Volunteer
+            </Link>
             </Button>
           </motion.div>
         </motion.div>
