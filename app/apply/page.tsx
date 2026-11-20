@@ -4,7 +4,7 @@ import { MainFooter } from "@/components/main-footer"
 import { FellowshipForm } from "@/components/fellowship-form"
 
 export const metadata: Metadata = {
-  title: "Fellowship Application | The Codepreneur Network",
+  title: "Become a Fellow | The Codepreneur Network",
   description:
     "Apply to the Codepreneur Network Fellowship Program and help empower kids with education in programming, AI, and business principles.",
 }
@@ -20,7 +20,7 @@ export default function ApplyPage() {
           </p>
           <h1 className="mb-6 text-4xl font-extrabold tracking-tight md:text-5xl">
             <span className="bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
-              Fellowship Program Application
+              Become a Fellow
             </span>
           </h1>
           <p className="mb-4 leading-relaxed text-gray-400">
@@ -32,7 +32,6 @@ export default function ApplyPage() {
             If you&apos;re passionate about making a significant impact on a child&apos;s future and inspiring their
             vocation, sign up now and be part of this transformative journey!
           </p>
-          <p className="font-semibold text-white">Submit your application by December 2nd!</p>
         </div>
 
         <FellowshipForm />

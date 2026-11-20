@@ -12,8 +12,6 @@ export function BlogSection() {
 
   const posts = [
     {
-      date: "Feb 1, 2025",
-      readTime: "5 min read",
       title: "Our Story: Empowering the Next Generation of Innovators",
       description:
         "Discover the journey of Codepreneur Network and our mission to empower youth through coding and entrepreneurship.",

@@ -1,11 +1,9 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import { InteractiveGrid } from "@/components/ui/interactive-grid"
 import { ShineBorder } from "@/components/ui/shine-border"
 import { UserPlus } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
@@ -56,19 +54,6 @@ export function HeroSection() {
             We have a clear objective: As an organization, we seek to provide State of the art education to the kids of
             tomorrow. We believe this is the best way to catalyze a future full of innovation and passion for creation.
           </motion.p>
-          <motion.div
-            className="flex gap-4 justify-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
-          >
-            <Button variant="secondary" className="bg-white text-black hover:bg-gray-200">
-              <Link href="/apply" className="flex items-center gap-2">
-            <UserPlus className="w-4 h-4" />
-              Volunteer
-            </Link>
-            </Button>
-          </motion.div>
         </motion.div>
 
         <ShineBorder className="relative mx-auto" borderClassName="border border-white/10 rounded-xl overflow-hidden">
@@ -92,4 +77,3 @@ export function HeroSection() {
     </section>
   )
 }
-

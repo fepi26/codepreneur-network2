@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { Linkedin, Instagram, Youtube, Twitter } from "lucide-react"
+import { Linkedin, Instagram } from "lucide-react"
 
 export function MainFooter() {
   const ref = useRef(null)
@@ -12,31 +12,11 @@ export function MainFooter() {
 
   const footerSections = [
     {
-      title: "Company",
+      title: "Organization",
       links: [
-        { name: "About Us", href: "/about" },
+        { name: "About Us", href: "/blog/our-story" },
         { name: "Privacy Policy", href: "/privacy" },
-        { name: "App Privacy Policy", href: "/app-privacy" },
         { name: "Terms of Service", href: "/terms" },
-        { name: "Disclaimer", href: "/disclaimer" },
-      ],
-    },
-    {
-      title: "Product",
-      links: [
-        { name: "Documentation", href: "/docs" },
-        { name: "Pricing", href: "/#pricing" },
-        { name: "Blog", href: "/blog" },
-        { name: "Changelog", href: "/changelog" },
-      ],
-    },
-    {
-      title: "Support",
-      links: [
-        { name: "FAQ", href: "/faq" },
-        { name: "Email", href: "mailto:support@visible-ai.com" },
-        { name: "Discord", href: "https://discord.gg/visible-ai" },
-        { name: "Download", href: "/#pricing" },
       ],
     },
   ]
@@ -48,14 +28,12 @@ export function MainFooter() {
       label: "LinkedIn",
     },
     { icon: Instagram, href: "https://www.instagram.com/codepreneur.network/", label: "Instagram" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Youtube, href: "#", label: "YouTube" },
   ]
 
   return (
     <footer ref={ref} className="bg-black border-t border-white/10 py-16 mt-auto">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid gap-8 md:grid-cols-5 mb-16">
+        <div className="grid gap-8 md:grid-cols-3 mb-16">
           <motion.div
             className="md:col-span-2"
             initial={{ opacity: 0, y: 20 }}
@@ -71,9 +49,7 @@ export function MainFooter() {
                 className="h-24 w-24 object-contain"
               />
             </Link>
-            <p className="text-gray-400 max-w-sm">
-              Accelerate your content creation process by seamlessly integrating AI into your workflow.
-            </p>
+            <p className="text-gray-400 max-w-sm">Dare To Build</p>
           </motion.div>
 
           {footerSections.map((section, index) => (
@@ -119,4 +95,3 @@ export function MainFooter() {
     </footer>
   )
 }
-

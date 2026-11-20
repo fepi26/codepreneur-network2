@@ -9,9 +9,9 @@ import { useRef, useState } from "react"
 
 interface BlogPostLayoutProps {
   title: string
-  date: string
-  readTime: string
-  author: string
+  date?: string
+  readTime?: string
+  author?: string
   image: string
   children: React.ReactNode
   tags?: string[]
@@ -63,13 +63,15 @@ export function BlogPostLayout({ title, date, readTime, author, image, children,
 
         {/* Post Header */}
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-2 text-gray-400 mb-4">
-            <time>{date}</time>
-            <span>·</span>
-            <span>{readTime}</span>
-          </div>
+          {(date || readTime) && (
+            <div className="flex items-center justify-center gap-2 text-gray-400 mb-4">
+              {date && <time>{date}</time>}
+              {date && readTime && <span>·</span>}
+              {readTime && <span>{readTime}</span>}
+            </div>
+          )}
           <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">{title}</h1>
-          <p className="text-gray-400">By {author}</p>
+          {author && <p className="text-gray-400">By {author}</p>}
         </div>
 
         {/* Featured Image */}
@@ -119,4 +121,3 @@ export function BlogPostLayout({ title, date, readTime, author, image, children,
     </article>
   )
 }
-

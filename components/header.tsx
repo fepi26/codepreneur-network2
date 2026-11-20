@@ -33,7 +33,7 @@ export function Header() {
             Blog
           </Link>
           <Link href="/apply" className="text-sm text-gray-300 hover:text-white transition-colors">
-            Volunteer
+            Get Involved
           </Link>
           <Link href="/events" className="text-sm text-gray-300 hover:text-white transition-colors">
             Events
@@ -71,7 +71,7 @@ export function Header() {
               className="text-sm text-gray-300 hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Volunteer
+              Get Involved
             </Link>
             <Link
               href="/events"

@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
@@ -51,7 +50,6 @@ export function WhiteContentBlock() {
                 </div>
               </div>
 
-              <Button className="bg-white text-black hover:bg-gray-100 border border-gray-300">Get Involved</Button>
             </motion.div>
 
             <motion.div
@@ -74,4 +72,3 @@ export function WhiteContentBlock() {
     </section>
   )
 }
-
