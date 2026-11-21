@@ -11,7 +11,7 @@ import { Instagram } from "lucide-react"
 // Posts appear in the grid in the order listed. Delete or add lines freely.
 // ---------------------------------------------------------------------------
 const INSTAGRAM_POST_URLS: string[] = [
-  "https://www.instagram.com/p/DNy2_VlXq9i/?utm_source=ig_web_copy_link&hvrq=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==", "https://www.instagram.com/p/Dd9-4siD4Yv/?utm_source=ig_web_copy_link&bqrl=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==", "https://www.instagram.com/p/DSban2Cjcmt/?utm_source=ig_web_copy_link&bqrl=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA=="
+"https://www.instagram.com/p/DNy2_VlXq9i/?utm_source=ig_web_copy_link&gwpx=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==", "https://www.instagram.com/p/Dd9-4siD4Yv/?utm_source=ig_web_copy_link&knvt=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==", "https://www.instagram.com/p/DSban2Cjcmt/?utm_source=ig_web_copy_link&evlk=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA=="
 ]
 
 const PROFILE_URL = "https://www.instagram.com/codepreneur.network/"
@@ -93,17 +93,28 @@ export function InstagramFeed() {
           ))}
         </div>
       ) : (
-        <div className="max-w-md mx-auto rounded-2xl bg-zinc-900/50 border border-white/10 backdrop-blur-sm p-8 text-center">
-          <Instagram className="w-10 h-10 mx-auto mb-4 text-gray-300" />
-          <p className="text-gray-400 mb-6">See our latest posts and updates on Instagram.</p>
-          <a
-            href={PROFILE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-xl bg-white px-6 py-3 font-semibold text-black transition hover:bg-gray-200"
-          >
-            Follow on Instagram
-          </a>
+        <div className="mx-auto max-w-lg">
+          {/* Shows our latest public posts straight from Instagram (no links needed). */}
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-white">
+            <iframe
+              src="https://www.instagram.com/codepreneur.network/embed"
+              title="Codepreneur Network on Instagram"
+              className="h-[640px] w-full border-0"
+              loading="lazy"
+              scrolling="yes"
+            />
+          </div>
+          <div className="mt-6 text-center">
+            <a
+              href={PROFILE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-black transition hover:bg-gray-200"
+            >
+              <Instagram className="h-4 w-4" />
+              Follow on Instagram
+            </a>
+          </div>
         </div>
       )}
     </section>

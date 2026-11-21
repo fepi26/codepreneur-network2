@@ -2,8 +2,6 @@ import { Header } from "@/components/header"
 import { InstagramFeed } from "@/components/instagram-feed"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 const posts = [
   {
@@ -70,16 +68,6 @@ export default function BlogPage() {
     <main className="min-h-screen bg-black text-white">
       <Header />
       <div className="max-w-7xl mx-auto px-4 pt-24 pb-20">
-        {/* Back button */}
-        <div className="mb-12">
-          <Button variant="ghost" asChild className="text-gray-400 hover:text-white">
-            <Link href="/" className="flex items-center gap-2">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Home
-            </Link>
-          </Button>
-        </div>
-
         {/* Page Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Latest Articles</h1>
@@ -125,6 +113,9 @@ export default function BlogPage() {
             </Link>
           ))}
         </div>
+
+        {/* Instagram posts */}
+        <InstagramFeed />
       </div>
     </main>
   )

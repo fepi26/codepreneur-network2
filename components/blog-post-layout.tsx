@@ -2,8 +2,6 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import type React from "react" // Added import for React
 import { useRef, useState } from "react"
 
@@ -54,15 +52,7 @@ export function BlogPostLayout({ title, date, readTime, author, image, video, po
   return (
     <article className="min-h-screen bg-black text-white pb-20">
       <div className="max-w-4xl mx-auto px-4">
-        {/* Back button */}
-        <div className="py-8">
-          <Button variant="ghost" asChild className="text-gray-400 hover:text-white">
-            <Link href="/" className="flex items-center gap-2">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Home
-            </Link>
-          </Button>
-        </div>
+        <div className="pt-24" />
 
         {/* Post Header */}
         <div className="text-center mb-12">

@@ -23,7 +23,7 @@ const options = [
     icon: Building2,
     title: "Apply for a Partnership",
     description:
-      "For organizations — schools, nonprofits, companies and more — that want to bring our education to the students they serve.",
+      "For schools, nonprofits, and companies that want to bring our education to the students they serve.",
     cta: "Apply as an organization",
   },
 ]

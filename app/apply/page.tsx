@@ -13,9 +13,9 @@ export default function ApplyPage() {
   return (
     <main className="min-h-screen bg-black flex flex-col">
       <Header />
-      <div className="flex-grow container mx-auto max-w-3xl px-4 pt-32 pb-16">
+      <div className="flex-grow container mx-auto max-w-3xl px-4 pt-40 pb-16">
         <div className="mb-10 text-center">
-          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-indigo-400">
+          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-[#fcac30]">
             The Codepreneur Network
           </p>
           <h1 className="mb-6 text-4xl font-extrabold tracking-tight md:text-5xl">
