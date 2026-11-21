@@ -141,7 +141,7 @@ export function BlogPostLayout({ title, date, readTime, author, image, video, po
           className={`max-w-none leading-relaxed text-gray-300
             [&_p]:mb-5 [&_p]:text-justify
             [&_h2]:mb-4 [&_h2]:mt-12
-            ${elegantHeadings ? "[&_h2]:font-serif [&_h2]:text-4xl [&_h2]:font-normal [&_h2]:italic [&_h2]:text-purple-300" : "[&_h2]:text-3xl [&_h2]:font-bold [&_h2]:text-white"}
+            ${elegantHeadings ? "[&_h2]:font-serif [&_h2]:text-4xl [&_h2]:font-normal [&_h2]:italic [&_h2]:text-[#fcac30]" : "[&_h2]:text-3xl [&_h2]:font-bold [&_h2]:text-white"}
             [&_h3]:mb-3 [&_h3]:mt-8 [&_h3]:text-2xl [&_h3]:font-semibold [&_h3]:text-white
             [&_ul]:mb-5 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-6
             [&_ol]:mb-5 [&_ol]:list-decimal [&_ol]:space-y-2 [&_ol]:pl-6

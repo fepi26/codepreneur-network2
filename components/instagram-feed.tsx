@@ -11,7 +11,7 @@ import { Instagram } from "lucide-react"
 // Posts appear in the grid in the order listed. Delete or add lines freely.
 // ---------------------------------------------------------------------------
 const INSTAGRAM_POST_URLS: string[] = [
-  // "https://www.instagram.com/p/XXXXXXXXXXX/",
+  "https://www.instagram.com/p/DNy2_VlXq9i/?utm_source=ig_web_copy_link&hvrq=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==", "https://www.instagram.com/p/Dd9-4siD4Yv/?utm_source=ig_web_copy_link&bqrl=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==", "https://www.instagram.com/p/DSban2Cjcmt/?utm_source=ig_web_copy_link&bqrl=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA=="
 ]
 
 const PROFILE_URL = "https://www.instagram.com/codepreneur.network/"

@@ -26,19 +26,19 @@ export function Header() {
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-8 px-8">
-          <Link href="/blog/our-story" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link href="/blog/our-story" className="text-base font-medium text-gray-300 hover:text-white transition-colors">
             Our Story
           </Link>
-          <Link href="/blog" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link href="/blog" className="text-base font-medium text-gray-300 hover:text-white transition-colors">
             Blog
           </Link>
-          <Link href="/apply" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link href="/get-involved" className="text-base font-medium text-gray-300 hover:text-white transition-colors">
             Get Involved
           </Link>
-          <Link href="/events" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link href="/events" className="text-base font-medium text-gray-300 hover:text-white transition-colors">
             Events
           </Link>
-          <Link href="/courses" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link href="/courses" className="text-base font-medium text-gray-300 hover:text-white transition-colors">
             Courses
           </Link>
         </nav>
@@ -54,35 +54,35 @@ export function Header() {
           <nav className="flex flex-col gap-4">
             <Link
               href="/blog/our-story"
-              className="text-sm text-gray-300 hover:text-white transition-colors"
+              className="text-base font-medium text-gray-300 hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Our Story
             </Link>
             <Link
               href="/blog"
-              className="text-sm text-gray-300 hover:text-white transition-colors"
+              className="text-base font-medium text-gray-300 hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Blog
             </Link>
             <Link
-              href="/apply"
-              className="text-sm text-gray-300 hover:text-white transition-colors"
+              href="/get-involved"
+              className="text-base font-medium text-gray-300 hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Get Involved
             </Link>
             <Link
               href="/events"
-              className="text-sm text-gray-300 hover:text-white transition-colors"
+              className="text-base font-medium text-gray-300 hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Events
             </Link>
             <Link
               href="/courses"
-              className="text-sm text-gray-300 hover:text-white transition-colors"
+              className="text-base font-medium text-gray-300 hover:text-white transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Courses
