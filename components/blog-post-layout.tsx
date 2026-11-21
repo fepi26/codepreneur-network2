@@ -56,7 +56,7 @@ export function BlogPostLayout({ title, date, readTime, author, image, video, po
       <Header />
       <div className="max-w-4xl mx-auto px-4">
         <div className="pt-28 pb-8">
-          <BackLink href="components/hero-section.tsx" label="Back" />
+          <BackLink href="/" label="Back to Home" />
         </div>
 
         {/* Post Header */}
