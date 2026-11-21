@@ -45,10 +45,6 @@ export default function BlogPost() {
       <p>
         Our mission is simple: We want to turn young minds into avid problem solvers who can provide great value to the society of the future.
       </p>
-      <br/>
-      <p>
-          - Fabian 
-      </p>
     </BlogPostLayout>
   )
 }

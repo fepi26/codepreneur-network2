@@ -25,41 +25,14 @@ const posts = [
     tags: ["Technology", "AI", "Future Tech"],
   },
   {
-    date: "Jan 25, 2025",
+    date: "Jan 25, 2026",
     readTime: "6 min read",
-    title: "AI-Driven Content Strategy Guide",
-    description: "A comprehensive guide to implementing AI in your content marketing strategy.",
+    title: "The World Needs More Entrepreneurs",
+    description: "The Power of Entrepreneurship in Solving Global Challenges",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20at%203.52.39%E2%80%AFPM-xxfEgzmuPPoKzY2wBzK65mjhcTuwqm.png",
-    href: "/blog/ai-driven-content-strategy",
-    tags: ["Content Strategy", "AI", "Marketing"],
-  },
-  {
-    date: "Jan 20, 2025",
-    readTime: "4 min read",
-    title: "Leveraging AI for Better Engagement",
-    description: "How artificial intelligence is changing the way we connect with our audience.",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20at%203.51.56%E2%80%AFPM-584BBy6y0Zv92sQ0MCOTtdlwzazQah.png",
-    tags: ["Engagement", "AI", "Social Media"],
-  },
-  {
-    date: "Jan 15, 2025",
-    readTime: "5 min read",
-    title: "The Rise of Automated Content Creation",
-    description: "Exploring the latest trends in AI-powered content generation and automation.",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20at%203.52.16%E2%80%AFPM-uqFPHw2jCZxuce9Oo7t1BLEnc7pasu.png",
-    tags: ["Automation", "Content Creation", "Trends"],
-  },
-  {
-    date: "Jan 10, 2025",
-    readTime: "7 min read",
-    title: "Building a Strong Content Strategy with AI",
-    description: "A step-by-step guide to incorporating AI into your content marketing efforts.",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-01%20at%203.52.39%E2%80%AFPM-xxfEgzmuPPoKzY2wBzK65mjhcTuwqm.png",
-    tags: ["Strategy", "Marketing", "AI Tools"],
+    href: "fepi26/codepreneur-network2/app/blog/world-needs-entrepreneurs/page.tsx",
+    tags: ["Business", "Future Tech", "Global Impact"],
   },
 ]
 
@@ -67,7 +40,7 @@ export default function BlogPage() {
   return (
     <main className="min-h-screen bg-black text-white">
       <Header />
-      <div className="max-w-7xl mx-auto px-4 pt-24 pb-20">
+      <div className="max-w-7xl mx-auto px-4 pt-32 pb-20">
         {/* Page Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Latest Articles</h1>

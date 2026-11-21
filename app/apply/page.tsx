@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Header } from "@/components/header"
+import { BackLink } from "@/components/back-link"
 import { MainFooter } from "@/components/main-footer"
 import { FellowshipForm } from "@/components/fellowship-form"
 
@@ -13,7 +14,10 @@ export default function ApplyPage() {
   return (
     <main className="min-h-screen bg-black flex flex-col">
       <Header />
-      <div className="flex-grow container mx-auto max-w-3xl px-4 pt-40 pb-16">
+      <div className="flex-grow container mx-auto max-w-3xl px-4 pt-32 pb-16">
+        <div className="mb-8">
+          <BackLink href="/get-involved" label="Back to Get Involved" />
+        </div>
         <div className="mb-10 text-center">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-[#fcac30]">
             The Codepreneur Network

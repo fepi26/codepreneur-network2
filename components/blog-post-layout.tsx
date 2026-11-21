@@ -4,6 +4,8 @@ import Image from "next/image"
 import Link from "next/link"
 import type React from "react" // Added import for React
 import { useRef, useState } from "react"
+import { Header } from "@/components/header"
+import { BackLink } from "@/components/back-link"
 
 interface BlogPostLayoutProps {
   title: string
@@ -51,8 +53,11 @@ export function BlogPostLayout({ title, date, readTime, author, image, video, po
 
   return (
     <article className="min-h-screen bg-black text-white pb-20">
+      <Header />
       <div className="max-w-4xl mx-auto px-4">
-        <div className="pt-24" />
+        <div className="pt-28 pb-8">
+          <BackLink href="/blog" label="Back to Blog" />
+        </div>
 
         {/* Post Header */}
         <div className="text-center mb-12">
