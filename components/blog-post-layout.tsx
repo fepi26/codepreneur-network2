@@ -13,11 +13,14 @@ interface BlogPostLayoutProps {
   readTime?: string
   author?: string
   image: string
+  video?: string
+  poster?: string
+  elegantHeadings?: boolean
   children: React.ReactNode
   tags?: string[]
 }
 
-export function BlogPostLayout({ title, date, readTime, author, image, children, tags = [] }: BlogPostLayoutProps) {
+export function BlogPostLayout({ title, date, readTime, author, image, video, poster, elegantHeadings = false, children, tags = [] }: BlogPostLayoutProps) {
   // 3D tilt effect state
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
@@ -74,7 +77,24 @@ export function BlogPostLayout({ title, date, readTime, author, image, children,
           {author && <p className="text-gray-400">By {author}</p>}
         </div>
 
+        {/* Featured video (if provided) */}
+        {video && (
+          <div className="relative mb-12 w-full overflow-hidden rounded-xl bg-zinc-900">
+            <video
+              src={video}
+              poster={poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="aspect-video w-full object-cover"
+            />
+          </div>
+        )}
+
         {/* Featured Image */}
+        {!video && (
         <div 
           ref={cardRef}
           className="relative w-full aspect-[16/9] mb-12 cursor-pointer transition-all duration-300 ease-out hover:scale-105"
@@ -103,6 +123,7 @@ export function BlogPostLayout({ title, date, readTime, author, image, children,
             }}
           />
         </div>
+        )}
 
         {/* Tags */}
         {tags.length > 0 && (
@@ -116,7 +137,18 @@ export function BlogPostLayout({ title, date, readTime, author, image, children,
         )}
 
         {/* Content */}
-        <div className="prose prose-invert max-w-none [&_p]:text-justify">{children}</div>
+        <div
+          className={`max-w-none leading-relaxed text-gray-300
+            [&_p]:mb-5 [&_p]:text-justify
+            [&_h2]:mb-4 [&_h2]:mt-12
+            ${elegantHeadings ? "[&_h2]:font-serif [&_h2]:text-4xl [&_h2]:font-normal [&_h2]:italic [&_h2]:text-purple-300" : "[&_h2]:text-3xl [&_h2]:font-bold [&_h2]:text-white"}
+            [&_h3]:mb-3 [&_h3]:mt-8 [&_h3]:text-2xl [&_h3]:font-semibold [&_h3]:text-white
+            [&_ul]:mb-5 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-6
+            [&_ol]:mb-5 [&_ol]:list-decimal [&_ol]:space-y-2 [&_ol]:pl-6
+            [&_strong]:font-semibold [&_strong]:text-white`}
+        >
+          {children}
+        </div>
       </div>
     </article>
   )

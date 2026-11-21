@@ -9,6 +9,7 @@ import { LoadingScreen } from "@/components/loading-screen"
 const inter = Inter({ subsets: ["latin"] })
 const playfair = Playfair_Display({
   subsets: ["latin"],
+  style: ["normal", "italic"],
   variable: "--font-playfair",
 })
 
@@ -38,4 +39,3 @@ export default function RootLayout({
     </html>
   )
 }
-

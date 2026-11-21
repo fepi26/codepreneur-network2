@@ -1,4 +1,5 @@
 import { Header } from "@/components/header"
+import { InstagramFeed } from "@/components/instagram-feed"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
@@ -128,4 +129,3 @@ export default function BlogPage() {
     </main>
   )
 }
-
